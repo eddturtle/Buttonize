@@ -1,0 +1,435 @@
+/*    CSS3 BUTTONIZE FRAMEWORK v1.1    */
+/*       WWW.CSS3FRAMEWORK.CO.UK       */
+/*   Made by Edd Turtle (@eddturtle)   */
+
+
+/* -- Standard Button -- */
+
+.button
+{
+	/* Set Defaults */
+	display: inline-block;
+	height: 27px;
+	border: 2px solid #333;
+	outline: 0;
+	margin: 4px 6px;
+	padding-left: 16px;
+	padding-right: 16px;
+	font-size: 13px;
+	line-height: 27px;
+	text-shadow: 1px 1px 1px #FFF;
+	text-align: center;
+	cursor: pointer;
+
+	/* Border Radius */
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+
+	/* Box Shadow */
+	-moz-box-shadow: inset 1px 1px 5px rgba(255,255,255,0.2), 0 0 4px rgba(255,255,255,0.5);
+	-webkit-box-shadow: inset 1px 1px 5px rgba(255,255,255,0.2), 0 0 4px rgba(255,255,255,0.5);
+	box-shadow: inset 1px 1px 5px rgba(255,255,255,0.2), 0 0 4px rgba(255,255,255,0.5);
+
+	/* Gradient Background */
+	background-color: #e0e0e0;
+	background-image: -moz-linear-gradient(top, #f7edff, #b1b1b1);
+	background-image: -webkit-linear-gradient(top, #f7edff, #b1b1b1);
+	background-image: -ms-linear-gradient(top, #f7edff, #b1b1b1);
+	background-image: -o-linear-gradient(top, #f7edff, #b1b1b1);
+	background-image: linear-gradient(top, #f7edff, #b1b1b1);
+
+	/* Background Clip */
+	-moz-background-clip: padding; 
+	-webkit-background-clip: padding-box; 
+	background-clip: padding-box; 
+}
+
+.button:link, .button:visited, .button:hover
+{
+	color: #444;
+	text-decoration: none;
+}
+
+.button:hover, .button:focus
+{
+	/* Darken Gradient Background */
+	background-image: -moz-linear-gradient(top, #f5f5ff, #999);
+	background-image: -webkit-linear-gradient(top, #f5f5ff, #999);
+	background-image: -ms-linear-gradient(top, #f5f5ff, #999);
+	background-image: -o-linear-gradient(top, #f5f5ff, #999);
+	background-image: linear-gradient(top, #f5f5ff, #999);
+}
+
+.button:active
+{
+	/* Move Button Down onClick */
+	position: relative;
+	top: 1px;
+
+	/* Inset Dark Shadow */
+	-moz-box-shadow: inset 0 0 8px rgba(80,80,80,0.5);
+	-webkit-box-shadow: inset 0 0 8px rgba(80,80,80,0.5);
+	box-shadow: inset 0 0 8px rgba(80,80,80,0.5);
+}
+
+
+/* -- Size -- */
+
+.big
+{
+	/* Increase Font & Button Size */
+	font-size: 17px;
+	height: 38px;
+	line-height: 38px;
+	padding-left: 23px;
+	padding-right: 23px;
+
+	/* Larger Border Radius */
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.small
+{
+	/* Decrease Font & Button Size */
+	font-size: 11px;
+	height: 20px;
+	line-height: 20px;
+	border: 1px solid #333;
+	padding-left: 8px;
+	padding-right: 8px;
+
+	/* Smaller Border Radius */
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+/* -- Panel Buttons -- */
+
+.left, .middle
+{
+	/* Remove Right-Hand Border */
+	border-right-width: 0;
+}
+
+.left, .middle, .right
+{
+	/* Make Buttons Fit Together */
+	margin: 0;
+}
+
+.left:active, .middle:active, .right:active
+{
+	/* Don't Move Buttons onClick */
+	top: 0;
+}
+
+.left
+{
+	/* No Right-Hand Border Radius */
+	-moz-border-radius-topright: 0;
+	-moz-border-radius-bottomright: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.right
+{
+	/* No Left-Hand Border Radius */
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-bottomleft: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+
+/* -- Middle & Square -- */
+
+.middle, .square
+{
+	/* No Border Radius */
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+
+/* -- Icons -- */
+
+.arrow, .heart, .star
+{
+	/* Decrease Padding to Allow for Icon */
+	padding-left: 12px;
+}
+
+.arrow:before, .heart:before, .star:before
+{
+	/* Align Icon */
+	padding-right: 5px;
+	vertical-align: -15%;
+}
+
+.arrow:before
+{
+	content: url(images/arrow.png);
+}
+
+.heart:before
+{
+	content: url(images/heart.png);
+}
+
+.star:before
+{
+	content: url(images/star.png);
+}
+
+
+/* -- Stripe -- */
+
+.stripe:link, .stripe:visited
+{
+	/* Multiple Backgrounds - Stripe & Gradient */
+	background-image: url(images/bg_stripe.png), -moz-linear-gradient(top, #f7edff, #b1b1b1);
+	background-image: url(images/bg_stripe.png), -webkit-linear-gradient(top, #f7edff, #b1b1b1);
+	background-image: url(images/bg_stripe.png), -ms-linear-gradient(top, #f7edff, #b1b1b1);
+	background-image: url(images/bg_stripe.png), -o-linear-gradient(top, #f7edff, #b1b1b1);
+	background-image: url(images/bg_stripe.png), linear-gradient(top, #f7edff, #b1b1b1);
+}
+
+.stripe:hover, .stripe:focus
+{
+	/* Multiple Backgrounds - Stripe & Gradient */
+	background-image: url(images/bg_stripe.png), -moz-linear-gradient(top, #f5f5ff, #999999);
+	background-image: url(images/bg_stripe.png), -webkit-linear-gradient(top, #f5f5ff, #999999);
+	background-image: url(images/bg_stripe.png), -ms-linear-gradient(top, #f5f5ff, #999999);
+	background-image: url(images/bg_stripe.png), -o-linear-gradient(top, #f5f5ff, #999999);
+	background-image: url(images/bg_stripe.png), linear-gradient(top, #f5f5ff, #999999);
+}
+
+.stripe:active
+{
+	-moz-box-shadow: inset 0 0 8px rgba(80,80,80,0.5);
+	-webkit-box-shadow: inset 0 0 8px rgba(80,80,80,0.5);
+	box-shadow: inset 0 0 8px rgba(80,80,80,0.5);
+}
+
+
+/* -- Disabled -- */
+
+.disabled
+{
+	/* Dull Colours */
+	border-color: #CCC;
+	background: #e0e0e0;
+	color: #CCC;
+	cursor: default;
+
+	/* No Box Shadow */
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+
+	/* Set Transparency */
+	opacity: .7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+	filter: alpha(opacity=70);
+}
+
+.disabled:hover, .disabled:active, .disabled:focus
+{
+	/* Don't Move Button onClick */
+	top: 0;
+
+	/* Plain BG, Same as :link & :visited */
+	background: #e0e0e0;
+
+	/* No Box Shadow */
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* -- Colours -- */
+
+.blue:link, .blue:visited,
+.red:link, .red:visited, 
+.green:link, .green:visited, 
+.orange:link, .orange:visited, 
+.purple:link, .purple:visited,
+.black:link, .black:visited
+{
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.blue
+{
+	border-color: #003B80;
+	background-color: #004CA3;
+	background-image: -webkit-linear-gradient(top, #006CE8, #004CA3); 
+	background-image: -moz-linear-gradient(top, #006CE8, #004CA3); 
+	background-image: -ms-linear-gradient(top, #006CE8, #004CA3); 
+	background-image: -o-linear-gradient(top, #006CE8, #004CA3); 
+	background-image: linear-gradient(top, #006CE8, #004CA3);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#006CE8', EndColorStr='#004CA3');
+}
+.blue:hover, .blue:focus
+{
+	background-color: #003B80;
+	background-image: -webkit-linear-gradient(top, #006CE8, #003B80); 
+	background-image: -moz-linear-gradient(top, #006CE8, #003B80); 
+	background-image: -ms-linear-gradient(top, #006CE8, #003B80); 
+	background-image: -o-linear-gradient(top, #006CE8, #003B80); 
+	background-image: linear-gradient(top, #006CE8, #003B80);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#006CE8', EndColorStr='#003B80');
+}
+
+.red
+{
+	border-color: #B50000;
+	background-color: #D00000;
+	background-image: -webkit-linear-gradient(top, #F33, #D00000); 
+	background-image: -moz-linear-gradient(top, #F33, #D00000); 
+	background-image: -ms-linear-gradient(top, #F33, #D00000); 
+	background-image: -o-linear-gradient(top, #F33, #D00000); 
+	background-image: linear-gradient(top, #F33, #D00000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF3333', EndColorStr='#D00000');
+}
+.red:hover, .red:focus
+{
+	background-color: #B50000;
+	background-image: -webkit-linear-gradient(top, #F33, #B50000); 
+	background-image: -moz-linear-gradient(top, #F33, #B50000); 
+	background-image: -ms-linear-gradient(top, #F33, #B50000); 
+	background-image: -o-linear-gradient(top, #F33, #B50000); 
+	background-image: linear-gradient(top, #F33, #B50000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FF3333', EndColorStr='#B50000');
+}
+
+.green
+{
+	border-color: #279100;
+	background-color: #2EAD00;
+	background-image: -webkit-linear-gradient(top, #3FED00, #2EAD00); 
+	background-image: -moz-linear-gradient(top, #3FED00, #2EAD00); 
+	background-image: -ms-linear-gradient(top, #3FED00, #2EAD00); 
+	background-image: -o-linear-gradient(top, #3FED00, #2EAD00); 
+	background-image: linear-gradient(top, #3FED00, #2EAD00);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3FED00', EndColorStr='#2EAD00');
+}
+.green:hover, .green:focus
+{
+	background-color: #279100;
+	background-image: -webkit-linear-gradient(top, #3FED00, #279100); 
+	background-image: -moz-linear-gradient(top, #3FED00, #279100); 
+	background-image: -ms-linear-gradient(top, #3FED00, #279100); 
+	background-image: -o-linear-gradient(top, #3FED00, #279100); 
+	background-image: linear-gradient(top, #3FED00, #279100);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#3FED00', EndColorStr='#279100');
+}
+
+.orange
+{
+	border-color: #da7c0c;
+	background-color: #faa51a;
+	background-image: -webkit-linear-gradient(top, #faa51a, #f47a20); 
+	background-image: -moz-linear-gradient(top, #faa51a, #f47a20); 
+	background-image: -ms-linear-gradient(top, #faa51a, #f47a20); 
+	background-image: -o-linear-gradient(top, #faa51a, #f47a20); 
+	background-image: linear-gradient(top, #faa51a, #f47a20);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#faa51a', EndColorStr='#f47a20');
+}
+.orange:hover, .orange:focus
+{
+	background-color: #da7c0c;
+	background-image: -webkit-linear-gradient(top, #faa51a, #da7c0c);
+	background-image: -moz-linear-gradient(top, #faa51a, #da7c0c);
+	background-image: -ms-linear-gradient(top, #faa51a, #da7c0c);
+	background-image: -o-linear-gradient(top, #faa51a, #da7c0c);
+	background-image: linear-gradient(top, #faa51a, #da7c0c);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#faa51a', EndColorStr='#da7c0c');
+}
+
+.purple
+{
+	border-color: #660099;
+	background-color: #CA00D1;
+	background-image: -webkit-linear-gradient(top, #CA00D1, #AA00B0); 
+	background-image: -moz-linear-gradient(top, #CA00D1, #AA00B0); 
+	background-image: -ms-linear-gradient(top, #CA00D1, #AA00B0); 
+	background-image: -o-linear-gradient(top, #CA00D1, #AA00B0); 
+	background-image: linear-gradient(top, #CA00D1, #AA00B0);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#CA00D1', EndColorStr='#AA00B0');
+}
+.purple:hover, .purple:focus
+{
+	background-color: #609;
+	background-image: -webkit-linear-gradient(top, #CA00D1, #609); 
+	background-image: -moz-linear-gradient(top, #CA00D1, #609); 
+	background-image: -ms-linear-gradient(top, #CA00D1, #609); 
+	background-image: -o-linear-gradient(top, #CA00D1, #609); 
+	background-image: linear-gradient(top, #CA00D1, #609);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#CA00D1', EndColorStr='#660099');
+}
+
+.black
+{
+	border-color: #000;
+	background-color: #333333;
+	background-image: -webkit-linear-gradient(top, #666, #333); 
+	background-image: -moz-linear-gradient(top, #666, #333); 
+	background-image: -ms-linear-gradient(top, #666, #333); 
+	background-image: -o-linear-gradient(top, #666, #333); 
+	background-image: linear-gradient(top, #666, #333);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#666666', EndColorStr='#333333');
+}
+.black:hover, .black:focus
+{
+	background-color: #000;
+	background-image: -webkit-linear-gradient(top, #666, #000); 
+	background-image: -moz-linear-gradient(top, #666, #000); 
+	background-image: -ms-linear-gradient(top, #666, #000); 
+	background-image: -o-linear-gradient(top, #666, #000); 
+	background-image: linear-gradient(top, #666, #000);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#666666', EndColorStr='#000000');
+}
+
+
+/* -- Text Type -- */
+
+.bold
+{
+	font-weight: bold !important;
+}
+.underline
+{
+	text-decoration: underline !important;
+}
+.italic
+{
+	font-style: italic !important;
+}
+
+
+/* -- Hightlight Buttons -- */
+
+.highlight:link, .highlight:visited, .highlight:hover, .highlight:focus
+{
+	/* No IE Support - Extra Elements Needed */
+	/* http://css-tricks.com/snippets/css/css-box-shadow/ */
+
+	/* Large White Box Shadow */
+	-moz-box-shadow: 0 0 20px #FFF;
+	-webkit-box-shadow: 0 0 20px #FFF;
+	box-shadow: 0 0 20px #FFF;
+}
+.highlight:active
+{
+	/* Even Larger White Box Shadow */
+	-moz-box-shadow: 0 0 28px #FFF;
+	-webkit-box-shadow: 0 0 28px #FFF;
+	box-shadow: 0 0 28px #FFF;
+}
