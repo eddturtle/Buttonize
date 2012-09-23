@@ -1,9 +1,9 @@
-#[Buttonize](http://css3framework.co.uk/ "Buttonize")
+#[Buttonize 3](http://css3framework.co.uk/ "Buttonize 3")
 * * *
 
-#####The Light-Weight & Flexible CSS3 Button Stylesheet
+#####The Instant Button Companion
 
-The Buttonize Framework is a simple, light-weight CSS file with precompiled styles and colours for quick, modern looking buttons. It uses CSS3 for rounded corners and subtle gradients but with bulletproof fallbacks for older browsers.
+Buttonize is a simple, light-weight (6kb) CSS file containing precompiled styles and colours for quick, modern looking buttons. It uses CSS3 for rounded corners and subtle gradients, with fallbacks for older browsers.
 
 [Demo](http://css3framework.co.uk/ "Demo")
 
