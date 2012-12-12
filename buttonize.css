@@ -1,7 +1,5 @@
 /*
- * BUTTONIZE v3 : The Instant Button Companion
- * 
- * Licensed under MIT & GPL
+ * BUTTONIZE v3.1 : Licensed under MIT & GPL
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
  * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
  * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
@@ -19,13 +17,12 @@
 
 .buttonize {
 	display: inline-block;
-	padding: 6px 10px;
-	border: 1px solid #444;
-	border-radius: 6px;
+	padding: .4em .7em;
+	border: 1px solid #666;
+	border-radius: 8px;
 	background-color: #CCC;
 	background-image: -webkit-linear-gradient(top, #DDD, #BBB);
 	background-image: -moz-linear-gradient(top, #DDD, #BBB);
-	background-image: -o-linear-gradient(top, #DDD, #BBB);
 	background-image: linear-gradient(top, #DDD, #BBB);
 }
 
@@ -41,7 +38,6 @@
 	background-color: #BBB;
 	background-image: -webkit-linear-gradient(top, #DDD, #AAA);
 	background-image: -moz-linear-gradient(top, #DDD, #AAA);
-	background-image: -o-linear-gradient(top, #DDD, #AAA);
 	background-image: linear-gradient(top, #DDD, #AAA);
 }
 
@@ -54,7 +50,6 @@
 
 .buttonize.large {
 	font-size: 1.4em;
-	padding: 10px 14px;
 }
 
 
@@ -62,7 +57,6 @@
 
 .buttonize.small {
 	font-size: .7em;
-	padding: 2px 6px;
 }
 
 
@@ -76,7 +70,7 @@
 /** Pill **/
 
 .buttonize.pill {
-	border-radius: 99px;
+	border-radius: 999px;
 }
 
 
@@ -133,7 +127,6 @@
 	background-color: #CCC;
 	background-image: -webkit-linear-gradient(top, #DDD, #BBB);
 	background-image: -moz-linear-gradient(top, #DDD, #BBB);
-	background-image: -o-linear-gradient(top, #DDD, #BBB);
 	background-image: linear-gradient(top, #DDD, #BBB);
 }
 
@@ -148,7 +141,7 @@
 }
 
 .buttonize.underline {
-	text-decoration: underline
+	text-decoration: underline;
 }
 
 
@@ -175,7 +168,7 @@
 }
 
 
-/** Thick **/
+/** Thick Border **/
 
 .buttonize.thick {
 	border-width: 2px;
@@ -184,13 +177,37 @@
 
 /** Coloured **/
 
+/* Dark */
+.buttonize.dark,
+.buttonize.dark:link,
+.buttonize.dark:visited {
+	background-color: #333;
+	background-image: -webkit-linear-gradient(top, #555, #222);
+	background-image: -moz-linear-gradient(top, #555, #222);
+	background-image: linear-gradient(top, #555, #222);
+	border-color: #000;
+	color: #FFF;
+}
+
+.buttonize.dark:hover {
+	background-color: #CC0000;
+	background-image: -webkit-linear-gradient(top, #555, #222);
+	background-image: -moz-linear-gradient(top, #555, #222);
+	background-image: linear-gradient(top, #555, #222);
+}
+
+.buttonize.dark:active {
+	background: #333;
+}
+
+
+/* Red */
 .buttonize.red,
 .buttonize.red:link,
 .buttonize.red:visited {
 	background-color: #E60000;
 	background-image: -webkit-linear-gradient(top, #FF1A1A, #E60000);
 	background-image: -moz-linear-gradient(top, #FF1A1A, #E60000);
-	background-image: -o-linear-gradient(top, #FF1A1A, #E60000);
 	background-image: linear-gradient(top, #FF1A1A, #E60000);
 	border-color: #990000;
 	color: #FFF;
@@ -200,7 +217,6 @@
 	background-color: #CC0000;
 	background-image: -webkit-linear-gradient(top, #FF1A1A, #CC0000);
 	background-image: -moz-linear-gradient(top, #FF1A1A, #CC0000);
-	background-image: -o-linear-gradient(top, #FF1A1A, #CC0000);
 	background-image: linear-gradient(top, #FF1A1A, #CC0000);
 }
 
@@ -209,13 +225,13 @@
 }
 
 
+/* Green */
 .buttonize.green,
 .buttonize.green:link,
 .buttonize.green:visited {
 	background-color: #5CB82E;
 	background-image: -webkit-linear-gradient(top, #66CC33, #5CB82E);
 	background-image: -moz-linear-gradient(top, #66CC33, #5CB82E);
-	background-image: -o-linear-gradient(top, #66CC33, #5CB82E);
 	background-image: linear-gradient(top, #66CC33, #5CB82E);
 	border-color: #006600;
 	color: #FFF;
@@ -225,7 +241,6 @@
 	background-color: #52A329;
 	background-image: -webkit-linear-gradient(top, #66CC33, #52A329);
 	background-image: -moz-linear-gradient(top, #66CC33, #52A329);
-	background-image: -o-linear-gradient(top, #66CC33, #52A329);
 	background-image: linear-gradient(top, #66CC33, #52A329);
 	color: #FFF;
 }
@@ -235,13 +250,13 @@
 }
 
 
+/* Blue */
 .buttonize.blue,
 .buttonize.blue:link,
 .buttonize.blue:visited {
 	background-color: #007EBD;
 	background-image: -webkit-linear-gradient(top, #00A0F0, #007EBD);
 	background-image: -moz-linear-gradient(top, #00A0F0, #007EBD);
-	background-image: -o-linear-gradient(top, #00A0F0, #007EBD);
 	background-image: linear-gradient(top, #00A0F0, #007EBD);
 	border-color: #0000CC;
 	color: #FFF;
@@ -251,7 +266,6 @@
 	background-color: #006DA3;
 	background-image: -webkit-linear-gradient(top, #00A0F0, #006DA3);
 	background-image: -moz-linear-gradient(top, #00A0F0, #006DA3);
-	background-image: -o-linear-gradient(top, #00A0F0, #006DA3);
 	background-image: linear-gradient(top, #00A0F0, #006DA3);
 	color: #FFF;
 }
@@ -261,13 +275,13 @@
 }
 
 
+/* Orange */
 .buttonize.orange,
 .buttonize.orange:link,
 .buttonize.orange:visited {
 	background-color: #FF9900;
 	background-image: -webkit-linear-gradient(top, #FFAD33, #FF9900);
 	background-image: -moz-linear-gradient(top, #FFAD33, #FF9900);
-	background-image: -o-linear-gradient(top, #FFAD33, #FF9900);
 	background-image: linear-gradient(top, #FFAD33, #FF9900);
 	border-color: #FF3300;
 	color: #FFF;
@@ -277,7 +291,6 @@
 	background-color: #E68A00;
 	background-image: -webkit-linear-gradient(top, #FFAD33, #E68A00);
 	background-image: -moz-linear-gradient(top, #FFAD33, #E68A00);
-	background-image: -o-linear-gradient(top, #FFAD33, #E68A00);
 	background-image: linear-gradient(top, #FFAD33, #E68A00);
 	color: #FFF;
 }
@@ -287,13 +300,13 @@
 }
 
 
+/* Purple */
 .buttonize.purple,
 .buttonize.purple:link,
 .buttonize.purple:visited {
 	background-color: #8A00E6;
 	background-image: -webkit-linear-gradient(top, #A31AFF, #8A00E6);
 	background-image: -moz-linear-gradient(top, #A31AFF, #8A00E6);
-	background-image: -o-linear-gradient(top, #A31AFF, #8A00E6);
 	background-image: linear-gradient(top, #A31AFF, #8A00E6);
 	border-color: #660033;
 	color: #FFF;
@@ -303,7 +316,6 @@
 	background-color: #7A00CC;
 	background-image: -webkit-linear-gradient(top, #A31AFF, #7A00CC);
 	background-image: -moz-linear-gradient(top, #A31AFF, #7A00CC);
-	background-image: -o-linear-gradient(top, #A31AFF, #7A00CC);
 	background-image: linear-gradient(top, #A31AFF, #7A00CC);
 	color: #FFF;
 }
@@ -313,7 +325,7 @@
 }
 
 
-/** Arrows **/
+/** Arrows & Icons **/
 
 .buttonize.arrow-left:before {
 	content: "\2190";
