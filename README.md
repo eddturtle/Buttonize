@@ -1,4 +1,4 @@
-#[Buttonize 3](http://css3framework.co.uk/ "Buttonize 3")
+![alt text](http://css3framework.co.uk/v3/img/icon50.png "Logo")#[Buttonize 3](http://css3framework.co.uk/ "Buttonize 3")
 
 ####The Instant Button Companion
 
@@ -14,14 +14,11 @@ Licensed under [MIT](http://opensource.org/licenses/mit-license.php "MIT") & [GP
 2. Add the Stylesheet to &lt;head&gt;
 
 ```
-<link rel="stylesheet" href="buttonize3.min.css">
+<link rel="stylesheet" href="buttonize.min.css">
 ```
 
 3. Add a button
 
 ```
-<a href="#" class="buttonize heart">Buttonize</a>
+<a href="#url" class="buttonize heart">Buttonize</a>
 ```
-
-
-![alt text](http://css3framework.co.uk/v3/img/icon50.png "Logo")
